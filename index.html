@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clement's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="#home" class="logo">Clementdevv</a>
+            
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-home">
+            <div class="content-wrapper">
+                <div class="home-content">
+                    <h3 class="title">Welcome to my Portfolio website</h3>
+                    <h5>
+                        <p class="subtitle">A passionate developer crafting innovative web experiences</p>                    
+                    </h5>
+                </div>                
+            </div>
+            
+        </section>
+
+        <section id="about" class="section-about">
+            <div class="background-image"></div>
+            <div class="content-wrapper">
+                <h2 class="section-title">About Me</h2>
+                <div class="transparent-overlay-card">
+                    <p>I am a software development experienced in mobile and web application development
+                       My journey in software development has equipped me with both technical expertise
+                       through a continuous pragmatic approach towards implementation of my software projects
+                       and creative problem-solving skills achieved through rigorous practice on coming 
+                       up with algorithm solutions to solve common problems.                                       
+                    </p>                    
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-skills">
+            <div class="content-wrapper">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="smartphone"></i>
+                            <h3>Flutter</h3>
+                        </div>
+                        <p class="skill-description">Advanced proficiency in Flutter for cross-platform mobile development. Experienced in creating responsive and adaptive applications based on Figma designs.</p>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="server"></i>
+                            <h3>Django</h3>
+                        </div>
+                        <p class="skill-description">Backend development skills with Django when it comes to web application development with authentication, relational database modeling, and RESTful API integration.</p>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="code"></i>
+                            <h3>ASP .NET Core</h3>
+                        </div>
+                        <p class="skill-description">Proficient in ASP.NET Core for building scalable and high-performance web applications. Experienced with MVC architecture and Entity Framework for database operations.</p>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="file-code"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <p class="skill-description">Expert-level JavaScript skills with deep understanding of ES6+ features. Comfortable with asynchronous programming, DOM manipulation, and modern JavaScript frameworks.</p>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="layout"></i>
+                            <h3>React</h3>
+                        </div>
+                        <p class="skill-description">Advanced React development skills including hooks, context API, and Redux. Experienced in building complex single-page applications with optimal performance.</p>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="code-2"></i>
+                            <h3>TypeScript</h3>
+                        </div>
+                        <p class="skill-description">Strong TypeScript skills with focus on type safety and interface design. Proficient in leveraging TypeScript for larger-scale applications to reduce runtime errors.</p>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i data-lucide="palette"></i>
+                            <h3>Tailwind CSS</h3>
+                        </div>
+                        <p class="skill-description">Expert in Tailwind CSS for rapid UI development. Skilled at creating responsive and visually appealing interfaces with utility-first approach and custom themes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-projects">
+            <div class="content-wrapper">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Task-Thrill — Task Manager application</h3>
+                        <p>At present, I am working on a Task manager application with Flutter for mobile compatibility, Django being its backend and the admin section with Javascript to allow it’s access by the Administrator via the web when it comes to user management and allow user access via mobile phones. The application of Django is due to me being well conversant with the framework based on specific features concerning security such as token authentication, real time capabilities like push notifications where Websockets are applied and its Rest Framework that works well with Object-relational Mapping.
+                            .</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Teletext—Mobile Chat application</h3>
+                        <p>I am presently working on a Chat application project with Flutter for frontend and Django as the backend framework. The application is still within the early phases of development with plans to integrate Websockets into the application’s set up in order to allow for real time communication between users signed up to Teletext.
+                        </p>
+                    </div>                   
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-contact">
+            <div class="content-wrapper">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-grid">
+                    <a href="https://github.com/clementdevv" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <i data-lucide="github"></i>
+                        <span>Github</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/clement-odongo/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <div class="contact-card">
+                        <i data-lucide="phone"></i>
+                        <span>0740405469</span>
+                    </div>
+                    <div class="contact-card">
+                        <i data-lucide="mail"></i>
+                        <span>Gmail</span>
+                    </div>
+                    <div>
+                        <a href="https://docs.google.com/document/d/1ZXmTQLKwnjbU6ggoM8C4l98jRd0Cu3AhRllsBSSJ5l4/edit?tab=t.0#heading=h.hx8h8bqisenh" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <i data-lucide="download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
