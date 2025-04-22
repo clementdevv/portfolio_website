@@ -44,7 +44,7 @@
                 <div class="home-content">
                     <h3 class="title">Welcome to my Portfolio website</h3>
                     <h5>
-                        <p class="subtitle">I'm Clement, a software developer proficient at mobile application development and good at web development</p>                    
+                        <p class="subtitle">I'm Clement, a software developer proficient at mobile application development and good at web development, along with working knowledge in Artificial Neural Networks with Julia.</p>                    
                     </h5>
                 </div>                
             </div>
@@ -56,11 +56,10 @@
             <div class="content-wrapper">
                 <h2 class="section-title">About Me</h2>
                 <div class="transparent-overlay-card">
-                    <p>I am a software development experienced in mobile and web application development
-                       My journey in software development has equipped me with both technical expertise
-                       through a continuous pragmatic approach towards implementation of my software projects
-                       and creative problem-solving skills achieved through rigorous practice on coming 
-                       up with algorithm solutions to solve common problems.                                       
+                    <p>I am a software developer experienced in mobile and web application development.
+                       With proficiency in Mobile App Development using Dart's Flutter framework, I harbour passion for 
+                       bringing forth digital efficiency to the users' palm. I have working knowledge of supervised learning
+                       in Julia using the Flux.jl deep learning framework and Rectified Linear Unit (ReLU) activation function.
                     </p>                    
                 </div>
             </div>
@@ -118,11 +117,15 @@
                     
                     <div class="skill-item">
                         <div class="skill-header">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Julia_Programming_Language_Logo.svg/768px-Julia_Programming_Language_Logo.svg.png" 
                             alt="Code Icon" width="24">   
-                            <h3>TypeScript</h3>
+                            <h3>Julia</h3>
                         </div>
-                        <p class="skill-description">Given my fanatical bias toward statically typed languages, TypeScript is the language of the web that makes developers like myself feel at home, along with the advantage of reduction in runtime errors when coding.</p>
+                        <p class="skill-description">
+                            Thanks to my curiosity to learn Artificial intelligence, I took the chance to learn Julia as a modern language, 
+                            to get to delve into deep learning. With Julia, I get to easily learn Artificial Neural Networks using it's robust
+                            libararies like Flux.jl and MLDatasets.jl.
+                        </p>
                     </div>                                        
                 </div>
             </div>
@@ -133,9 +136,14 @@
                 <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3>Task-Thrill — Task Manager application</h3>
-                        <p>At present, I am working on a Task manager application with Flutter for mobile compatibility, Django being its backend and the admin section with Javascript to allow it’s access by the Administrator via the web when it comes to user management and allow user access via mobile phones. The application of Django is due to me being well conversant with the framework based on specific features concerning security such as token authentication, real time capabilities like push notifications where Websockets are applied and its Rest Framework that works well with Object-relational Mapping.
-                            .</p>
+                        <h3>Handwritten Digit Classification with Artificial Neural Networks</h3>
+                        <p>
+                            This is a project based on Artificial Neural Networks using The Julia Programming Language to classify handwritten digits, 
+                            using Julia's Flux.jl deep learning framework for model training. The MLDatasets,jl library also comes in handy for image recognition.
+                            The model is based on a simple neural network architecture, and it's training process is optimized using the RMSProp algorithm, with its
+                            performance being viewed on a learning curve plot, thanks to the Plots.jl library.
+                            The model is therefore able to perform highly accurate digit recognition.
+                        </p>
                     </div>
                     <div class="project-card">
                         <h3>Teletext—Mobile Chat application</h3>
@@ -162,10 +170,10 @@
                         <i data-lucide="phone"></i>
                         <span>0740405469</span>
                     </div>
-                    <div class="contact-card">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clementodongo@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <i data-lucide="mail"></i>
-                        <span>Gmail</span>
-                    </div>
+                        <span>clementdevv@gmail.com</span>
+                    </a>
                     <div>
                         <a href="https://docs.google.com/document/d/1ZXmTQLKwnjbU6ggoM8C4l98jRd0Cu3AhRllsBSSJ5l4/edit?tab=t.0#heading=h.hx8h8bqisenh" target="_blank" rel="noopener noreferrer" class="contact-card">
                             <i data-lucide="download"></i>
@@ -177,7 +185,29 @@
             </div>
         </section>
     </main>
-
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAYgaENXbfTDXUPIHRqmQ3jby8j3iastJM",
+          authDomain: "clementdevv-portfolio-website.firebaseapp.com",
+          projectId: "clementdevv-portfolio-website",
+          storageBucket: "clementdevv-portfolio-website.firebasestorage.app",
+          messagingSenderId: "188829082739",
+          appId: "1:188829082739:web:bfd617d1074cb7d32f3606",
+          measurementId: "G-NBDLYZKFN8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script> 
 </body>
 </html>
